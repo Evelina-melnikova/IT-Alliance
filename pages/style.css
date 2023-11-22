@@ -286,14 +286,15 @@
 }
 
 .lead {
-    background-image: url(../images/first320.png);
+    background-image: url(../images/first.png);
     background: linear-gradient(178deg, #242B33 14.74%, rgba(45, 52, 60, 0.38) 51.02%, #252C34 89.35%)/ cover no-repeat;
-    min-height: 227px;
+    min-height: 259px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    object-fit: cover;
 
 }
 
@@ -317,7 +318,7 @@
 
 @media screen and (min-width:720px) and (max-width:1021px) {
     .lead {
-        min-height: 406px;
+        min-height: 318px;
     }
 }
 
@@ -342,14 +343,36 @@
 @media screen and (min-width:1920px) {
     .lead {
         min-height: 1111px;
-        background-image: url(../images/first.png);
     }
 }
 
 @media screen and (min-width:3000px) {
     .lead {
         min-height: 1365px;
-        background-image: url(../images/first.png);
+    }
+}
+
+@media screen and (min-width:4000px) {
+    .lead {
+        min-height: 1537px;
+    }
+}
+
+@media screen and (min-width:5000px) {
+    .lead {
+        min-height: 2316px;
+    }
+}
+
+@media screen and (min-width:6000px) {
+    .lead {
+        min-height: 2422px;
+    }
+}
+
+@media screen and (min-width:7000px) {
+    .lead {
+        min-height: 3004px;
     }
 }
 
