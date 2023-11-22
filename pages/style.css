@@ -3,7 +3,7 @@
 
 .page {
     width: 100%;
-    background-color: rgba(44, 44, 44, 1);
+    background-color: #0F1113;
     margin: 0;
 
 }
@@ -286,9 +286,9 @@
 }
 
 .lead {
-    background-image: url(../images/firstImg.png);
+    background-image: url(../images/first320.png);
     background: linear-gradient(178deg, #242B33 14.74%, rgba(45, 52, 60, 0.38) 51.02%, #252C34 89.35%)/ cover no-repeat;
-    min-height: 179px;
+    min-height: 227px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -305,7 +305,7 @@
 
 @media screen and (min-width:468px) and (max-width:719px) {
     .lead {
-        height: 306px;
+        min-height: 290px;
     }
 }
 
@@ -317,31 +317,39 @@
 
 @media screen and (min-width:720px) and (max-width:1021px) {
     .lead {
-        height: 340px;
+        min-height: 406px;
     }
 }
 
 @media screen and (min-width:1022px) and (max-width:1280px) {
     .lead {
-        height: 555px;
+        min-height: 581px;
     }
 }
 
 @media screen and (min-width:1281px) and (max-width:1700px) {
     .lead {
-        height: 619px;
+        min-height: 619px;
     }
 }
 
 @media screen and (min-width:1701px) and (max-width:1920px) {
     .lead {
-        height: 800px;
+        min-height: 800px;
     }
 }
 
 @media screen and (min-width:1920px) {
     .lead {
-        height: 995px;
+        min-height: 1111px;
+        background-image: url(../images/first.png);
+    }
+}
+
+@media screen and (min-width:3000px) {
+    .lead {
+        min-height: 1365px;
+        background-image: url(../images/first.png);
     }
 }
 
@@ -735,6 +743,12 @@
 }
 
 @media screen and (min-width:1280px) and (max-width:1920px) {
+    .about {
+        height: 884px;
+    }
+}
+
+@media screen and (min-width:1920px) {
     .about {
         height: 884px;
     }
