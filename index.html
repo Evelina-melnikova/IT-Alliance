@@ -95,15 +95,15 @@
         </section>
         <section class="more">
             <div class="more__container-first">
+                <a href="#" class="link">
                     <div class="box cooperation_box">
-                        <a href="#" class="link">
                         <img class="box_img box_img-server" alt="иконка сервера" src="./images/server 1.svg">
                         <div class="box_wrapper box_wrapper-server">
                             <p class="box-text">Сотрудничайте с крупнейшими поставщиками IT оборудования</p>
                             <a href="#" class="link-more">Подробнее →</a>
                         </div>
-                    </a>
                     </div>
+                </a>
                 <a href="#" class="link">
                     <div class="box about_box">
                         <img class="box_img box_img-about" src="./images/bag.svg" alt="иконка портфеля">
@@ -139,6 +139,20 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="questions_wrapper">
+                <div class="questions__text">
+                    <h3 class="questions__title">Есть вопросы?</h3>
+                    <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
+                    </p>
+                </div>
+                <input type="text" class="name_input" placeholder="Ваше имя" id="name" name="name" >
+                <span id="text-error" class="popup__error"></span>
+                <input type="tel" class="tel_input" placeholder="Ваш телефон" id="tel" name="tel" >
+                <span id="tel-error" class="popup__error"></span>
+                <button class="send">Отправить запрос</button>
             </div>
         </section>
     </main>
