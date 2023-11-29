@@ -143,16 +143,21 @@
         </section>
         <section class="questions">
             <div class="questions_wrapper">
-                <div class="questions__text">
-                    <h3 class="questions__title">Есть вопросы?</h3>
-                    <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
-                    </p>
+                <h3 class="questions__title">Есть вопросы? <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Almarai&family=Play:wght@400;700&family=Raleway&display=swap');
+                    </style>
+                </h3>
+                <div class="questions__inputs">
+                    <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
+                        minlength="2" maxlength="30" required>
+                    <span id="text-error" class="popup__error"></span>
+                    <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
+                        minlength="11" maxlength="11" required>
+                    <span id="tel-error" class="popup__error"></span>
+                    <button class="send" type="submit">Отправить запрос</button>
                 </div>
-                <input type="text" class="name_input" placeholder="Ваше имя" id="name" name="name" >
-                <span id="text-error" class="popup__error"></span>
-                <input type="tel" class="tel_input" placeholder="Ваш телефон" id="tel" name="tel" >
-                <span id="tel-error" class="popup__error"></span>
-                <button class="send">Отправить запрос</button>
+                <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
+                </p>
             </div>
         </section>
     </main>
