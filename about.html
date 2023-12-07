@@ -10,6 +10,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Almarai&family=Lora&family=Nunito+Sans:opsz,wght@6..12,700&family=Play:wght@400;700&family=Potta+One&family=Raleway&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai&family=Lora&family=Luxurious+Roman&family=Nunito+Sans:opsz,wght@6..12,700&family=Play:wght@400;700&family=Potta+One&family=Raleway&display=swap');
+      </style>
 </head>
 
 <body class="page page_about">
@@ -17,15 +20,21 @@
         <img class="logo_header" src="./images/logo.svg" alt="IT-Alliance">
         <div class="header_wrapper">
             <nav class="header__nav">
-                <a href="main.html">
+                <a href="index.html">
                     <button class="nav_text nav_text-main">Главная</button>
                 </a>
-                <a href="">
+                <a href="about.html">
                     <button class="nav_text nav_text-about">О компании</button>
                 </a>
+                <a href="logistics.html">
                 <button class="nav_text nav_text-logistics">Логистика</button>
+                </a>
+                <a href="">
                 <button class="nav_text nav_text-suppliers">Поставщики</button>
+                </a>
+                <a href="">
                 <button class="nav_text nav_text-contacts">Контакты</button>
+                </a>
             </nav>
             <p class="header_lang">RU</p>
             <button class="header_langs" src="./images/langs.svg" type="button"></button>
@@ -33,7 +42,7 @@
         </div>
     </header>
     <main class="content">
-        <h1 class="about_title">О компании</h1>
+        <h1 class="about-company_title">О компании</h1>
         <section class="about-company_text">
                 <p class="paragraph ">Добро пожаловать в IT Alliance — вашего надежного партнера в мире передовых
                     технологий. </p>
@@ -58,6 +67,42 @@
                     сделать мир лучше с помощью технологий. Присоединяйтесь к нам, чтобы вместе открывать новые
                     горизонты в
                     мире IT!</p>
+        </section>
+        <section class="feedback">
+            <div class="questions_wrapper">
+                <h3 class="questions__title">Есть вопросы? 
+                </h3>
+                <div class="questions__inputs">
+                    <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
+                        minlength="2" maxlength="30" required>
+                    <span id="text-error" class="popup__error"></span>
+                    <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
+                        minlength="11" maxlength="14" validate>
+                    <span id="tel-error" class="popup__error"></span>
+                    <button class="send" type="submit">Отправить запрос</button>
+                </div>
+                <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
+                </p>
+            </div>
+        </section>
+        <section class="feedback-desktop">
+            <div class="questions_wrapper">
+                <div class="questions_text">
+                    <h3 class="questions__title">Есть вопросы? 
+                    </h3>
+                    <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
+                    </p>
+                </div>
+                <div class="questions__inputs">
+                    <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
+                        minlength="2" maxlength="30" required>
+                    <span id="text-error" class="popup__error"></span>
+                    <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
+                        minlength="11" maxlength="14" validate>
+                    <span id="tel-error" class="popup__error"></span>
+                    <button class="send" type="submit">Отправить запрос</button>
+                </div>
+            </div>
         </section>
     </main>
 

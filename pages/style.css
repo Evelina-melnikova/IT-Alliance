@@ -417,6 +417,13 @@
     cursor: pointer;
 }
 
+.nav_text:active {
+    color: rgba(80, 70, 70, 0.81);
+}
+
+.nav_text:visited {
+    color: rgba(80, 70, 70, 0.81);
+}
 
 @media screen and (min-width:1280px) {
     .nav_text {
@@ -446,7 +453,7 @@
     .nav_text {
         color: rgba(249, 249, 249, 0.81);
         font-family: 'Raleway', sans-serif;
-        font-size: 30px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 400;
         line-height: 28.8px;
@@ -457,7 +464,6 @@
 
 .lead {
     background-image: url(../images/first.png);
-    background: linear-gradient(178deg, #242B33 14.74%, rgba(45, 52, 60, 0.38) 51.02%, #252C34 89.35%)/ cover no-repeat;
     min-height: 259px;
     width: 100%;
     background-size: cover;
@@ -826,7 +832,7 @@
     .support {
         width: 189px;
         gap: 26px;
-        margin-top: 121px;
+        margin-top: 139px;
         height: 6px;
     }
 }
@@ -835,14 +841,14 @@
     .support {
         width: 205px;
         gap: 17px;
-        margin-top: 217px;
+        margin-top: 276px;
         height: 6px;
     }
 }
 
 @media screen and (min-width:1280px) {
     .support {
-        margin-top: 154px;
+        margin-top: 262px;
         width: 227px;
         gap: 27px;
         height: 6px;
@@ -3163,7 +3169,7 @@
     }
 }
 
-.about_title {
+.about-company_title {
     color: #F0F0F0;
     font-family: 'Potta One', sans-serif;
     font-size: 11px;
@@ -3173,10 +3179,60 @@
     padding-top: 60px;
     margin-left: 8px;
     max-width: 74px;
+    margin-top: 0;
+}
+
+@media screen and (min-width:768px) {
+    .about-company_title {
+        font-size: 25px;
+        max-width: 161px;
+        padding-top: 117px;
+        margin-left: 18px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .about-company_title {
+        font-size: 30px;
+        max-width: 196px;
+        padding-top: 130px;
+        margin-left: 30px;
+
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .about-company_title {
+        font-size: 30px;
+        max-width: 196px;
+        padding-top: 130px;
+        margin-left: 38px;
+
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .about-company_title {
+        font-size: 40px;
+        max-width: 247px;
+        padding-top: 200px;
+        margin-left: 65px;
+
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .about-company_title {
+        font-size: 55px;
+        max-width: 325px;
+        padding-top: 272px;
+        margin-left: 65px;
+        padding-bottom: 14px;
+    }
 }
 
 .about-company_text {
-    background-image: url(../images/Frame\ 11.jpg);
+    background-image: url(../images/Frame\ 11.png);
     min-height: 171px;
     width: 100%;
     background-size: cover;
@@ -3186,8 +3242,56 @@
     object-fit: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 7px;
     margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 11px;
+}
+
+@media screen and (min-width:768px) {
+    .about-company_text {
+        gap: 10px;
+        margin-top: 35px;
+        padding-bottom: 14px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .about-company_text {
+        padding-bottom: 19px;
+        gap: 14px;
+        margin-top: 35px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .about-company_text {
+        padding-bottom: 37px;
+        margin-top: 79px;
+        gap: 16px;
+        padding-top: 22px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .about-company_text {
+        padding-bottom: 50px;
+        margin-top: 81px;
+        gap: 32px;
+        padding-top: 22px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .about-company_text {
+        padding-bottom: 52px;
+        margin-top: 96px;
+        gap: 40px;
+        padding-top: 22px;
+    }
 }
 
 .paragraph {
@@ -3200,4 +3304,154 @@
     line-height: normal;
     margin: 0;
     padding-left: 7px;
+}
+
+
+@media screen and (min-width:768px) {
+    .paragraph {
+        font-size: 19px;
+        margin: 0;
+        padding-left: 14px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .paragraph {
+        font-size: 22px;
+        margin: 0;
+        padding-left: 23px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .paragraph {
+        font-size: 28px;
+        margin: 0;
+        padding-left: 23px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .paragraph {
+        font-size: 35px;
+        margin: 0;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .paragraph {
+        font-size: 47px;
+        margin: 0;
+        padding-left: 42px;
+    }
+}
+
+
+.feedback {
+    background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+    width: 100%;
+    min-height: 155px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (min-width:468px) and (max-width:719px) {
+    .feedback {
+        min-height: 246px;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:1024px) {
+    .feedback {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .feedback {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:320px) {
+    .feedback-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .feedback-desktop {
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        width: 100%;
+        min-height: 476px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .feedback-desktop {
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        width: 100%;
+        min-height: 504px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1701px) and (max-width:1920px) {
+    .feedback-desktop {
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        width: 100%;
+        min-height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .feedback-desktop {
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        width: 100%;
+        min-height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .feedback-desktop {
+        min-height: 619px;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        width: 100%;
+        min-height: 1100px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+    }
 }
