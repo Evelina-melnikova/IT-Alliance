@@ -2355,14 +2355,14 @@
 @media screen and (min-width:768px) {
     .questions_wrapper {
         margin-top: 99px;
-
+        max-width: 256px;
     }
 }
 
 @media screen and (min-width:1024px) {
     .questions_wrapper {
         flex-direction: row;
-        max-width: 760.66px;
+        max-width: 826.66px;
         min-height: 95.94px;
         margin-top: 176px;
         gap: 32px;
@@ -2382,7 +2382,7 @@
 @media screen and (min-width:1701px) and (max-width:1920px) {
     .questions_wrapper {
         flex-direction: row;
-        max-width: 1204px;
+        max-width: 1242px;
         min-height: 250px;
         margin-top: 260px;
         gap: 72px;
@@ -2392,7 +2392,7 @@
 @media screen and (min-width:1920px) {
     .questions_wrapper {
         flex-direction: row;
-        max-width: 1200px;
+        max-width: 1285px;
         min-height: 233px;
         margin-top: 200px;
         gap: 66px;
@@ -2401,7 +2401,7 @@
 
 @media screen and (min-width:2560px) {
     .questions_wrapper {
-        max-width: 1657px;
+        max-width: 1850px;
         min-height: 313px;
         margin-top: 401px;
         gap: 99px;
@@ -2536,7 +2536,7 @@
 
 @media screen and (min-width:468px) and (max-width:768px) {
     .questions__title {
-        max-width: 132px;
+        max-width: 168px;
         min-height: 14px;
         font-size: 19px;
         margin-top: 0;
@@ -2545,14 +2545,14 @@
 
 @media screen and (min-width:768px) {
     .questions__title {
-        max-width: 200px;
+        max-width: 230px;
         font-size: 26px;
     }
 }
 
 @media screen and (min-width:1024px) {
     .questions__title {
-        max-width: 201px;
+        max-width: 420px;
         font-size: 30px;
         margin-top: 0;
     }
@@ -2561,7 +2561,7 @@
 
 @media screen and (min-width:1701px) and (max-width:1920px) {
     .questions__title {
-        max-width: 306px;
+        max-width: 397px;
         font-size: 42px;
         margin-top: 0;
     }
@@ -2569,7 +2569,7 @@
 
 @media screen and (min-width:1920px) {
     .questions__title {
-        max-width: 306px;
+        max-width: 407px;
         font-size: 46px;
         margin-top: 0;
     }
@@ -2577,7 +2577,7 @@
 
 @media screen and (min-width:2560px) {
     .questions__title {
-        max-width: 466px;
+        max-width: 657px;
         font-size: 70px;
     }
 }
@@ -2754,7 +2754,7 @@
 
 @media screen and (min-width:1701px) and (max-width:1920px) {
     .questions_text {
-        max-width: 342px;
+        max-width: 405px;
         min-height: 93px;
         gap: 49px;
     }
@@ -2762,7 +2762,7 @@
 
 @media screen and (min-width:1920px) {
     .questions_text {
-        max-width: 342px;
+        max-width: 496px;
         min-height: 93px;
         gap: 49px;
     }
@@ -2770,7 +2770,7 @@
 
 @media screen and (min-width:2560px) {
     .questions_text {
-        max-width: 489px;
+        max-width: 695px;
         min-height: 102px;
         gap: 74px;
     }
@@ -2898,7 +2898,7 @@
     .footer_icon {
         width: 42px;
         height: 42px;
-        padding: 15px;
+        padding: 8px;
     }
 }
 
@@ -3249,6 +3249,15 @@
     padding-bottom: 11px;
 }
 
+@media screen and (min-width:468px) and (max-width:768px) {
+    .about-company_text {
+        gap: 12px;
+        margin-top: 29px;
+        padding-bottom: 14px;
+        padding-top: 11px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .about-company_text {
         gap: 10px;
@@ -3306,6 +3315,13 @@
     padding-left: 7px;
 }
 
+@media screen and (min-width:468px) and (max-width:768px) {
+    .paragraph {
+        font-size: 10px;
+        margin: 0;
+        padding-left: 14px;
+    }
+}
 
 @media screen and (min-width:768px) {
     .paragraph {
@@ -3453,5 +3469,51 @@
         overflow: hidden;
         object-fit: cover;
         display: block;
+    }
+}
+
+.paragraph-list{
+    padding-left: 17px;
+}
+
+@media screen and (min-width:468px) and (max-width:768px) {
+    .paragraph-list {
+        padding-left: 27px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .paragraph-list {
+        padding-left: 32px;
+
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .paragraph-list {
+        padding-left: 40px;
+
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .paragraph-list {
+        padding-left: 46px;
+
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .paragraph-list {
+        padding-left: 70px;
+
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .paragraph-list {
+        padding-left: 82px;
+
     }
 }
