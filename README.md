@@ -1,1 +1,1 @@
-https://evelina-melnikova.github.io/IT-Allians/
+https://evelina-melnikova.github.io/IT-Alliance/
