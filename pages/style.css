@@ -3232,7 +3232,7 @@
 }
 
 .about-company_text {
-    background-image: url(../images/Frame\ 11.png);
+    background-image: url(../images/Frame\ 8.png);
     min-height: 171px;
     width: 100%;
     background-size: cover;
@@ -3361,6 +3361,15 @@
         margin: 0;
         padding-left: 42px;
     }
+}
+
+.about-map{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 165px;
+    border-radius: 10px;
 }
 
 
@@ -3515,5 +3524,78 @@
     .paragraph-list {
         padding-left: 82px;
 
+    }
+}
+
+
+.logistics_text {
+    background-image: url(../images/logistics.png);
+    min-height: 171px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 11px;
+}
+
+@media screen and (min-width:468px) and (max-width:768px) {
+    .logistics_text {
+        gap: 12px;
+        margin-top: 29px;
+        padding-bottom: 14px;
+        padding-top: 11px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .logistics_text {
+        gap: 10px;
+        margin-top: 35px;
+        padding-bottom: 14px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .logistics_text {
+        padding-bottom: 19px;
+        gap: 14px;
+        margin-top: 35px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .logistics_text {
+        padding-bottom: 37px;
+        margin-top: 79px;
+        gap: 16px;
+        padding-top: 22px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .logistics_text {
+        padding-bottom: 50px;
+        margin-top: 81px;
+        gap: 32px;
+        padding-top: 22px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .logistics_text {
+        padding-bottom: 52px;
+        margin-top: 96px;
+        gap: 40px;
+        padding-top: 22px;
     }
 }
