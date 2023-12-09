@@ -3799,8 +3799,8 @@
     margin: 0;
     padding: 0;
     border: none;
-    width: 9px;
-    height: 9px;
+    width: 11px;
+    height: 11px;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0);
     background-size: cover;
@@ -3811,11 +3811,11 @@
 }
 
 .popup__container {
-    width: 70px;
-    height: 76px;
+    width: 85px;
+    height: 98px;
     border-radius: 8px;
     background: var(--colors-black-text, #222);
-    margin-right: 48px;
+    margin-right: 46px;
     margin-left: auto;
     display: flex;
     flex-direction: column;
