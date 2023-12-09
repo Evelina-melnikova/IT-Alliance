@@ -1,14 +1,18 @@
 const popupOpenButtonMenu = document.querySelector('.header_menu');
 const popupOpenButtonLangs = document.querySelector('.header_langs');
-
-const popupCloseButton = document.querySelector('.popup__close-button')
+const popupCloseButtonMenu = document.querySelector('.popup__close-button-menu');
+const popupCloseButton = document.querySelector('.popup__close-button');
 const popupLangs = document.querySelector('.popup_langs');
-const popupMenu = document.querySelector('.popup_menu')
+const popupMenu = document.querySelector('.popup_menu');
 
  function openPopup(popup) {
     popup.classList.add('popup_opened');
     // document.addEventListener('keydown', closepopupEsc)
 };
+
+function closePopup(popup) {
+    popup.classList.remove('popup_opened');
+}
 
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
@@ -32,15 +36,9 @@ const closeButtonPopupMenu = function () {
 };
 
 
-// const closeButtonPopupMenu = function () {
-//     closePopup(popupMenu);
-// }
-
-
-
 
 popupCloseButton.addEventListener('click', closeButtonPopupLangs);
-popupCloseButton.addEventListener('click', closeButtonPopupMenu);
+popupCloseButtonMenu.addEventListener('click', closeButtonPopupMenu);
 popupOpenButtonMenu.addEventListener('click', openButtonPopupMenu);
 popupOpenButtonLangs.addEventListener('click', openButtonPopupLangs);
 

@@ -3810,10 +3810,27 @@
     position: relative;
 }
 
+.popup__close-button-menu{
+    background-image: url(../images/Close_Icon\(320\).svg);
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    position: relative;
+
+}
+
 .popup__container {
     width: 85px;
     height: 98px;
-    border-radius: 8px;
+    border-radius: 6px;
     background: var(--colors-black-text, #222);
     margin-right: 46px;
     margin-left: auto;
@@ -3821,17 +3838,31 @@
     flex-direction: column;
     align-items: center;
     margin-top: 9px;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 8px;
 }
 
-.popup__container-menu{
-    width: 70px;
-    height: 76px;
-    border-radius: 8px;
+.popup__container-menu {
+    width: 97px;
+    height: 119px;
+    border-radius: 6px;
     background: var(--colors-black-text, #222);
-    margin-right: 48px;
+    margin-right: 0;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 9px;
+}
+
+.popup-link {
+    color: var(--white-color-100, #FFF);
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-decoration: none;
 }
