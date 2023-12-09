@@ -3839,7 +3839,7 @@
     align-items: center;
     margin-top: 9px;
     justify-content: center;
-    gap: 7px;
+    gap: 11px;
     padding-top: 8px;
 }
 
@@ -3862,7 +3862,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 120%;
     text-decoration: none;
 }
