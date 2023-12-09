@@ -3844,8 +3844,8 @@
 }
 
 .popup__container-menu {
-    width: 97px;
-    height: 119px;
+    width: 115px;
+    height: 125px;
     border-radius: 6px;
     background: var(--colors-black-text, #222);
     margin-right: 0;
