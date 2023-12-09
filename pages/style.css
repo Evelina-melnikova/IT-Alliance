@@ -2783,7 +2783,7 @@
 }
 
 .footer__wrapper {
-    max-width: 241px;
+    max-width: 262px;
     min-height: 64px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -2793,11 +2793,21 @@
     gap: 27px;
 }
 
+@media screen and (min-width:468px) and (max-width:768px) {
+    .footer__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 357px;
+        min-height: 130px;
+        gap: 45px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .footer__wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
-        max-width: 416px;
+        max-width: 562px;
         min-height: 130px;
         gap: 45px;
     }
@@ -2842,15 +2852,23 @@
 
 .footer_container {
     display: flex;
-    max-width: 107px;
-    min-height: 23.564px;
+    max-width: 193px;
+    min-height: 41.7px;
     gap: 9px;
     align-items: center;
 }
 
+@media screen and (min-width:468px) and (max-width:768px) {
+    .footer_container {
+        max-width: 198px;
+        min-height: 50px;
+        gap: 12px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .footer_container {
-        max-width: 169px;
+        max-width: 264px;
         min-height: 50px;
         gap: 12px;
     }
@@ -2866,7 +2884,7 @@
 
 @media screen and (min-width:1920px) {
     .footer_container {
-        max-width: 289px;
+        max-width: 310px;
         min-height: 100px;
         gap: 24px;
     }
@@ -2965,7 +2983,7 @@
 
 @media screen and (min-width:1280px) {
     .footer_title {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -2998,6 +3016,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* width: 50%; */
+    justify-content: center;
 }
 
 @media screen and (min-width:768px) {
@@ -3363,7 +3383,7 @@
     }
 }
 
-.about-map{
+.about-map {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -3374,7 +3394,8 @@
 
 
 .feedback {
-    background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+    background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+    ;
     width: 100%;
     min-height: 155px;
     background-size: cover;
@@ -3412,7 +3433,8 @@
 
 @media screen and (min-width:1024px) and (max-width:1280px) {
     .feedback-desktop {
-        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+        ;
         width: 100%;
         min-height: 476px;
         background-size: cover;
@@ -3426,7 +3448,8 @@
 
 @media screen and (min-width:1280px) {
     .feedback-desktop {
-        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+        ;
         width: 100%;
         min-height: 504px;
         background-size: cover;
@@ -3440,7 +3463,8 @@
 
 @media screen and (min-width:1701px) and (max-width:1920px) {
     .feedback-desktop {
-        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+        ;
         width: 100%;
         min-height: 700px;
         background-size: cover;
@@ -3454,7 +3478,8 @@
 
 @media screen and (min-width:1920px) {
     .feedback-desktop {
-        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+        ;
         width: 100%;
         min-height: 700px;
         background-size: cover;
@@ -3469,7 +3494,8 @@
 @media screen and (min-width:2560px) {
     .feedback-desktop {
         min-height: 619px;
-        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25); ;
+        background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
+        ;
         width: 100%;
         min-height: 1100px;
         background-size: cover;
@@ -3481,7 +3507,7 @@
     }
 }
 
-.paragraph-list{
+.paragraph-list {
     padding-left: 17px;
 }
 
@@ -3598,4 +3624,214 @@
         gap: 40px;
         padding-top: 22px;
     }
+}
+
+.suppliers-company_title {
+    color: #F0F0F0;
+    font-family: 'Potta One', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 134px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+    .suppliers-company_title {
+        font-size: 25px;
+        max-width: 224px;
+        padding-top: 117px;
+        margin-left: 18px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .suppliers-company_title {
+        font-size: 30px;
+        max-width: 263px;
+        padding-top: 130px;
+        margin-left: 30px;
+
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .suppliers-company_title {
+        font-size: 30px;
+        max-width: 263px;
+        padding-top: 130px;
+        margin-left: 38px;
+
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .suppliers-company_title {
+        font-size: 40px;
+        max-width: 352px;
+        padding-top: 200px;
+        margin-left: 65px;
+
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .suppliers-company_title {
+        font-size: 55px;
+        max-width: 485px;
+        padding-top: 272px;
+        margin-left: 65px;
+        padding-bottom: 14px;
+    }
+}
+
+.grid-box {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+}
+
+
+.suppliers_box {
+    max-width: 250px;
+    min-height: 189px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.suppliers_box-Huawei {
+    background-image: url(../images/huawei.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.22));
+}
+
+.suppliers_title {
+    max-width: 73px;
+    margin-left: 25px;
+    margin-top: 0;
+    color: #FFF;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.box-list {
+    color: #FFF;
+
+    font-family: 'Jura', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: disc;
+
+    max-width: 372px;
+
+
+}
+
+.suppliers_link {
+    text-decoration: none;
+    max-width: 186px;
+    color: #090909;
+
+    color: rgba(254, 254, 254, 0.74);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 62px;
+    content: '·';
+
+}
+
+.container-box {
+    margin-top: 8px;
+
+}
+
+.box-text {}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .6s, opacity .4s linear;
+}
+
+.popup_opened {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+
+.popup__close-button {
+    background-image: url(../images/Close_Icon\(320\).svg);
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 9px;
+    height: 9px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    cursor: pointer;
+    right: 63px;
+    top: 15px;
+    position: relative;
+}
+
+.popup__container {
+    width: 70px;
+    height: 76px;
+    border-radius: 8px;
+    background: var(--colors-black-text, #222);
+    margin-right: 48px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.popup__container-menu{
+    width: 70px;
+    height: 76px;
+    border-radius: 8px;
+    background: var(--colors-black-text, #222);
+    margin-right: 48px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9px;
 }
