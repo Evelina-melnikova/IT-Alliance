@@ -2837,7 +2837,7 @@
     display: flex;
     width: 135px;
     min-height: 41.7px;
-    gap: 0;
+    gap: 9px;
     align-items: center;
 }
 
@@ -3011,15 +3011,11 @@
     }
 }
 
-@media screen and (min-width:1024px) {
-    .footer_column {
-        flex-direction: row;
-    }
-}
-
 @media screen and (min-width:1280px) {
     .footer_column {
         gap: 30px;
+        flex-direction: row;
+
     }
 }
 
@@ -4560,3 +4556,96 @@
 
     }
 }
+
+.about-text_company {
+    background-image: url(../images/Frame\ 8.png);
+    min-height: 231px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+@media screen and (min-width:468px) and (max-width:768px) {
+    .about-text_company {
+        min-height: 270px;
+
+    }
+}
+
+.paragraph_about {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Luxurious Roman', sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-left: 7px;
+    width: 93%;
+}
+
+.about-title_company{ 
+    padding-top: 62px;
+}
+
+
+@media screen and (min-width:468px) and (max-width:768px) {
+    .paragraph_about {
+        font-size: 11px;
+        margin: 0;
+        padding-left: 14px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .paragraph_about {
+        font-size: 19px;
+        margin: 0;
+        padding-left: 14px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .paragraph_about {
+        font-size: 22px;
+        margin: 0;
+        padding-left: 23px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .paragraph_about {
+        font-size: 28px;
+        margin: 0;
+        padding-left: 23px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .paragraph_about {
+        font-size: 35px;
+        margin: 0;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .paragraph_about {
+        font-size: 47px;
+        margin: 0;
+        padding-left: 42px;
+    }
+}
+
