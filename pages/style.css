@@ -3255,7 +3255,7 @@
     margin-top: 20px;
     padding-top: 8px;
     padding-bottom: 11px;
-    
+
 }
 
 @media screen and (min-width:468px) and (max-width:768px) {
@@ -3370,12 +3370,52 @@
 }
 
 .about-map {
-    width: 100%;
+    width: 286px;
     height: 150px;
     border-radius: 2px;
-    opacity: 0.8;
+    filter: brightness(80%);
+    -ms-filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    margin-bottom: 13px;
 }
 
+@media screen and (min-width: 468px) and (max-width: 768px) {
+    .about-map {
+        height: 171px;
+        width: 450px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-map {
+        height: 210px;
+        border-radius: 7.5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-map {
+        height: 285px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-map {
+        height: 330px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about-map {
+        height: 400px;
+    }
+}
 
 .feedback {
     background: linear-gradient(180deg, #131518 28.63%, #2F343C 85.25%, #131518 100%), rgba(28, 22, 65, 0.25);
@@ -4592,7 +4632,7 @@
     width: 93%;
 }
 
-.about-title_company{ 
+.about-title_company {
     padding-top: 62px;
 }
 
@@ -4644,4 +4684,3 @@
         padding-left: 42px;
     }
 }
-
