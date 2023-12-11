@@ -3395,6 +3395,7 @@
 @media screen and (min-width: 768px) {
     .about-map {
         height: 210px;
+        width: 470px;
         border-radius: 7.5px;
     }
 }
@@ -3402,18 +3403,32 @@
 @media screen and (min-width: 1024px) {
     .about-map {
         height: 285px;
+        width: 515px;
+
     }
 }
 
 @media screen and (min-width: 1280px) {
     .about-map {
         height: 330px;
+        width: 652px;
+
     }
 }
 
 @media screen and (min-width: 1920px) {
     .about-map {
-        height: 400px;
+        height: 482px;
+        width: 888px;
+
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .about-map {
+        height: 520px;
+        width: 1344px;
+
     }
 }
 
