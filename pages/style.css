@@ -924,6 +924,7 @@
     line-height: 5px;
 }
 
+
 @media screen and (min-width:768px) {
     .lead_number {
         line-height: 8px;
