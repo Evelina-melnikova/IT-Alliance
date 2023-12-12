@@ -160,39 +160,45 @@
             </div>
         </section>
         <section class="questions">
-            <div class="questions_wrapper">
-                <h3 class="questions__title">Есть вопросы?
-                </h3>
-                <div class="questions__inputs">
-                    <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
-                        minlength="2" maxlength="30" required>
-                    <span id="text-error" class="popup__error"></span>
-                    <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
-                        minlength="11" maxlength="14" validate>
-                    <span id="tel-error" class="popup__error"></span>
-                    <button class="send" type="submit">Отправить запрос</button>
-                </div>
-                <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки</p>
-            </div>
-        </section>
-        <section class="questions-desktop">
-            <div class="questions_wrapper">
-                <div class="questions_text">
+            <form action="send.php" method="post" class="questions questions_form">
+                <div class="questions_wrapper">
                     <h3 class="questions__title">Есть вопросы?
                     </h3>
+                    <div class="questions__inputs">
+                        <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
+                            minlength="2" maxlength="30" required>
+                        <span id="text-error" class="popup__error"></span>
+                        <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
+                            minlength="11" maxlength="14" required>
+                        <span id="tel-error" class="popup__error"></span>
+                        <button class="send" type="submit">Отправить запрос</button>
+                    </div>
                     <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
                     </p>
                 </div>
-                <div class="questions__inputs">
-                    <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
-                        minlength="2" maxlength="30" required>
-                    <span id="text-error" class="popup__error"></span>
-                    <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
-                        minlength="11" maxlength="14" validate>
-                    <span id="tel-error" class="popup__error"></span>
-                    <button class="send" type="submit">Отправить запрос</button>
+            </form>
+        </section>
+        <section class="questions-desktop">
+            <form  class="questions-desktop questions-desktop_form">
+                <div class="questions_wrapper">
+                    <div class="questions_text">
+                        <h3 class="questions__title">Есть вопросы?
+                        </h3>
+                        <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие
+                            сроки
+                        </p>
+                    </div>
+                    <div class="questions__inputs">
+                        <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
+                            minlength="2" maxlength="30" required>
+                        <span id="text-error" class="popup__error"></span>
+                        <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
+                            minlength="11" maxlength="14" validate>
+                        <span id="tel-error" class="popup__error"></span>
+                        <button class="send" type="submit">Отправить запрос</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -254,7 +260,11 @@
         </div>
         <button class="popup__close-button popup__close-button-menu" type="button"> </button>
     </section>
+
     <script type="text/javascript" src="./index.js"></script>
+   
+    
+
 </body>
 
 
