@@ -54,7 +54,7 @@
                     <button class="nav_text nav_text-logistics">Логистика</button>
                 </a>
                 <a href="./pages/suppliers.html">
-                    <button class="nav_text nav_text-suppliers">Поставщики</button>
+                    <button class="nav_text nav_text-suppliers">Вендоры</button>
                 </a>
                 <a href="./pages/contacts.html">
 
@@ -160,42 +160,37 @@
             </div>
         </section>
         <section class="questions">
-            <form action="send.php" method="post" class="questions questions_form">
+            <form action="#" id="form" class="form questions_form ">
                 <div class="questions_wrapper">
-                    <h3 class="questions__title">Есть вопросы?
-                    </h3>
+                    <input type="hidden" name="project_name" value="IT-Alliance">
+                    <input type="hidden" name="admin_email" value="info@it-alliance-company.ru">
+                    <h3 class="questions__title">Есть вопросы?</h3>
                     <div class="questions__inputs">
-                        <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
-                            minlength="2" maxlength="30" required>
-                        <span id="text-error" class="popup__error"></span>
-                        <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
-                            minlength="11" maxlength="14" required>
-                        <span id="tel-error" class="popup__error"></span>
-                        <button class="send" type="submit">Отправить запрос</button>
+                        <input type="text" class="input name_input _req" placeholder="Ваше имя" id="name" name="name"
+                            minlength="2" maxlength="30" data-reg="^[А-ЯЁ][а-яё]*$">
+                        <input type="tel" class="input tel_input _req _number" placeholder="Ваш телефон" id="tel"
+                            name="tel" minlength="11" maxlength="14">
+                        <button class="submit_button" type="submit">Отправить запрос</button>
                     </div>
-                    <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
-                    </p>
+                    <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки</p>
                 </div>
             </form>
         </section>
         <section class="questions-desktop">
-            <form  class="questions-desktop questions-desktop_form">
+            <form action="#" id="formDesk" class="form questions-desktop_form ">
+                <input type="hidden" name="project_name" value="IT-Alliance">
+                <input type="hidden" name="admin_email" value="info@it-alliance-company.ru">
                 <div class="questions_wrapper">
                     <div class="questions_text">
-                        <h3 class="questions__title">Есть вопросы?
-                        </h3>
-                        <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие
-                            сроки
-                        </p>
+                        <h3 class="questions__title">Есть вопросы?</h3>
+                        <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки</p>
                     </div>
                     <div class="questions__inputs">
-                        <input type="text" class="input name_input" placeholder="Ваше имя" id="name" name="name"
-                            minlength="2" maxlength="30" required>
-                        <span id="text-error" class="popup__error"></span>
-                        <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
-                            minlength="11" maxlength="14" validate>
-                        <span id="tel-error" class="popup__error"></span>
-                        <button class="send" type="submit">Отправить запрос</button>
+                        <input type="text" class="input name_input _req" placeholder="Ваше имя" id="name" name="name"
+                            minlength="2" maxlength="30" data-reg="^[А-ЯЁ][а-яё]*$" required>
+                        <input type="tel" class="input tel_input _req _number" placeholder="Ваш телефон" id="tel"
+                            name="tel" minlength="11" maxlength="14" required>
+                        <button class="submit_button" type="submit">Отправить запрос</button>
                     </div>
                 </div>
             </form>
@@ -244,27 +239,25 @@
     </footer>
     <section class="popup popup_langs">
         <div class="popup__container popup__container-langs">
-            <a class="popup-link" href="#">EN</a>
-            <a class="popup-link" href="#">中文</a>
-            <a class="popup-link" href="#">РУ</a>
+            <a class="popup-link" href="./pages/indexEn.html">EN</a>
+            <a class="popup-link" href="./pages/index中文.html">中文</a>
+            <a class="popup-link" href="./index.html">РУ</a>
         </div>
         <button class="popup__close-button popup__close-button-langs" type="button"> </button>
     </section>
     <section class="popup popup_menu">
         <div class="popup__container popup__container-menu">
-            <a class="popup-link" href="/index.html">Главная</a>
+            <a class="popup-link" href="./index.html">Главная</a>
             <a class="popup-link" href="./pages/about.html">О компании</a>
             <a class="popup-link" href="./pages/logistics.html">Логистика</a>
-            <a class="popup-link" href="./pages/suppliers.html">Поставщики</a>
+            <a class="popup-link" href="./pages/suppliers.html">Вендоры</a>
             <a class="popup-link" href="./pages/contacts.html">Контакты</a>
         </div>
         <button class="popup__close-button popup__close-button-menu" type="button"> </button>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
-   
-    
-
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 
 

@@ -65,7 +65,7 @@
                     <button class="nav_text nav_text-logistics">Логистика</button>
                 </a>
                 <a href="suppliers.html">
-                    <button class="nav_text nav_text-suppliers">Поставщики</button>
+                    <button class="nav_text nav_text-suppliers">Вендоры</button>
                 </a>
                 <a href="contacts.html">
                     <button class="nav_text nav_text-contacts">Контакты</button>
@@ -178,6 +178,9 @@
             </div>
         </section>
         <section class="feedback feedback-suppliers">
+            <form action="#"  class="form questions_form">
+                <input type="hidden" name="project_name" value="IT-Alliance">
+                <input type="hidden" name="admin_email" value="info@it-alliance-company.ru">
             <div class="questions_wrapper">
                 <h3 class="questions__title">Остались вопросы?
                 </h3>
@@ -188,13 +191,17 @@
                     <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
                         minlength="11" maxlength="14" validate>
                     <span id="tel-error" class="popup__error"></span>
-                    <button class="send" type="submit">Отправить запрос</button>
+                    <button class="submit_button" type="submit">Отправить запрос</button>
                 </div>
                 <p class="questions__subtitle">Оставьте контактные данные и мы с вами свяжемся в кратчайшие сроки
                 </p>
             </div>
+            </form>
         </section>
         <section class="feedback-desktop feedback-desktop-suppliers">
+            <form action="#"  class="form questions_form">
+                <input type="hidden" name="project_name" value="IT-Alliance">
+                <input type="hidden" name="admin_email" value="info@it-alliance-company.ru">
             <div class="questions_wrapper">
                 <div class="questions_text">
                     <h3 class="questions__title">Остались вопросы? </h3>
@@ -208,9 +215,10 @@
                     <input type="tel" class="input tel_input" placeholder="Ваш телефон" id="tel" name="tel"
                         minlength="11" maxlength="14" validate>
                     <span id="tel-error" class="popup__error"></span>
-                    <button class="send" type="submit">Отправить запрос</button>
+                    <button class="submit_button" type="submit">Отправить запрос</button>
                 </div>
             </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -256,9 +264,9 @@
     </footer>
     <section class="popup popup_langs">
         <div class="popup__container popup__container-langs">
-            <a class="popup-link" href="#">EN</a>
-            <a class="popup-link" href="#">中文</a>
-            <a class="popup-link" href="#">РУ</a>
+            <a class="popup-link" href="./suppliersEn.html">EN</a>
+            <a class="popup-link" href="./suppliers中文.html">中文</a>
+            <a class="popup-link" href="./suppliers.html">РУ</a>
         </div>
         <button class="popup__close-button popup__close-button-langs" type="button"> </button>
     </section>
@@ -267,12 +275,14 @@
             <a class="popup-link" href="../index.html">Главная</a>
             <a class="popup-link" href="./about.html">О компании</a>
             <a class="popup-link" href="./logistics.html">Логистика</a>
-            <a class="popup-link" href="./suppliers.html">Поставщики</a>
+            <a class="popup-link" href="./suppliers.html">Вендоры</a>
             <a class="popup-link" href="./contacts.html">Контакты</a>
         </div>
         <button class="popup__close-button popup__close-button-menu" type="button"> </button>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
 </body>
 
 
