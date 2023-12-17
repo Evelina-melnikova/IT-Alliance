@@ -109,11 +109,8 @@
                     <div class="questions__inputs">
                         <input type="text" class="input name_input" placeholder="Name" id="name" name="name"
                             minlength="2" maxlength="30" data-reg="^[А-ЯЁ][а-яё]*$" required>
-
-                        <span id="text-error" class="popup__error"></span>
                         <input type="tel" class="input tel_input" placeholder="Your phone" id="tel" name="tel"
                             minlength="11" maxlength="14" data-reg="^((\+7|7|8)+([0-9]){10})$" required>
-                        <span id="tel-error" class="popup__error"></span>
                         <button class="submit_button" type="submit">Send Request</button>
                     </div>
                     <p class="questions__subtitle">Leave your contact details, and we will get in touch with you as soon
@@ -141,7 +138,7 @@
                             minlength="2" maxlength="30" required>
                         <span id="text-error" class="popup__error"></span>
                         <input type="tel" class="input tel_input" placeholder="Your phone" id="tel" name="tel"
-                            minlength="11" maxlength="14" validate>
+                            minlength="11" maxlength="14" required>
                         <span id="tel-error" class="popup__error"></span>
                         <button class="submit_button" type="submit">Send Request</button>
                     </div>
@@ -212,7 +209,7 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="../index.js"></script>
-    <script type="text/javascript" src="../app.js"></script>
+    <script type="text/javascript" src="./appCopy.js"></script>
 </body>
 
 

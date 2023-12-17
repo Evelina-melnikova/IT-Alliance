@@ -12,10 +12,9 @@ if ( $method === 'POST' ) {
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email") {
 			$message .= "
-			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-			</tr>
+			" . ( ($c = !$c) ? '':'' ) . "
+				$key
+				$value
 			";
 		}
 	}
@@ -27,16 +26,15 @@ if ( $method === 'POST' ) {
 	foreach ( $_GET as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" ) {
 			$message .= "
-			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+			" . ( ($c = !$c) ? '':'' ) . "
 				$key
 				$value
-			</tr>
 			";
 		}
 	}
 }
 
-$message = "<table style='width: 100%;'>$message</table>";
+$message = "$message";
 
 function adopt($text) {
 	return '=?UTF-8?B?'.Base64_encode($text).'?=';
